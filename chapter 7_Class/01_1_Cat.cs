@@ -1,7 +1,7 @@
 ﻿using System;
 
 
-namespace Lecture_CSharp.chapter_7_Class
+namespace CatS
 {
     class _01_1_Cat
     {

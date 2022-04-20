@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Lecture_CSharp.chapter_7_Class
+namespace constructor_and_destroyer
 {
     class Cat
     {
