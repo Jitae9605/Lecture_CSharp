@@ -1,40 +1,42 @@
 ﻿using System;
 
-
-class Global
+namespace Global_and_Static
 {
-    public static int count = 0;
-}
-
-class ClassA
-{
-    public ClassA()
+    class Global
     {
-        Global.count++;
+        public static int count = 0;
     }
-}
 
-class ClassB
-{
-    public ClassB()
+    class ClassA
     {
-        Global.count++;
+        public ClassA()
+        {
+            Global.count++;
+        }
     }
-}
 
-class mainapp
-{
-    static void Main()
+    class ClassB
     {
-        Console.WriteLine($"Global.count : {Global.count}");
-
-        new ClassA();
-        new ClassA();
-        new ClassB();
-        new ClassB();
-
-        Console.WriteLine($"Global.count : {Global.count}");
-
+        public ClassB()
+        {
+            Global.count++;
+        }
     }
-}
 
+    class mainapp
+    {
+        static void Main()
+        {
+            Console.WriteLine($"Global.count : {Global.count}");
+
+            new ClassA();
+            new ClassA();
+            new ClassB();
+            new ClassB();
+
+            Console.WriteLine($"Global.count : {Global.count}");
+
+        }
+    }
+
+}
