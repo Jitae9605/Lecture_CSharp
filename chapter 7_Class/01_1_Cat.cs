@@ -1,7 +1,7 @@
 ﻿using System;
 
 
-namespace CatS
+namespace Cat
 {
     class _01_1_Cat
     {

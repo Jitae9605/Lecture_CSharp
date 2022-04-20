@@ -7,7 +7,7 @@ namespace NestedClass
     {
         List<ItemValue> listConfig = new List<ItemValue>(); // 챕터 11~12에서 추가로 배운다(지금[22.04.20]은 모름)
 
-        public void SetConfig(string item,string value)     // ItemValue 값 설정
+        public void SetConfig(string item, string value)     // ItemValue 값 설정
         {
             ItemValue iv = new ItemValue();
             iv.SetValue(this, item, value);
