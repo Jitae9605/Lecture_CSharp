@@ -11,6 +11,13 @@
     <Compile Remove="chapter 7_Class\03_1_Global_And_Static.cs" />
     <Compile Remove="chapter 7_Class\04_1_Shallow_copy_And_Deep_copy.cs" />
     <Compile Remove="chapter 7_Class\05_1_This_1.cs" />
+    <Compile Remove="chapter 7_Class\05_2_This_2.cs" />
+    <Compile Remove="chapter 7_Class\06_1_AccessModifier.cs" />
+    <Compile Remove="chapter 7_Class\07_1_Inheritance.cs" />
+    <Compile Remove="chapter 7_Class\08_1_TypeCasting_Is_and_As.cs" />
+    <Compile Remove="chapter 7_Class\09_1_Overriding.cs" />
+    <Compile Remove="chapter 7_Class\10_1_MethodHiding.cs" />
+    <Compile Remove="chapter 7_Class\11_1_ReadOnlyFields.cs" />
     <Compile Remove="MainApp.cs" />
   </ItemGroup>
 
