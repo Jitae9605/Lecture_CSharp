@@ -6,6 +6,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="chapter 10_Array_Collection_And_Indexer\01_1_ArraySample.cs" />
+    <Compile Remove="chapter 10_Array_Collection_And_Indexer\01_1_ArraySample_1.cs" />
+    <Compile Remove="chapter 10_Array_Collection_And_Indexer\01_2_ArraySample_2.cs" />
+    <Compile Remove="chapter 10_Array_Collection_And_Indexer\02_1_Initializing_Array.cs" />
     <Compile Remove="chapter 7_Class\01_1_Cat.cs" />
     <Compile Remove="chapter 7_Class\02_1_constructor_and_destroyer.cs" />
     <Compile Remove="chapter 7_Class\03_1_Global_And_Static.cs" />
@@ -30,11 +34,13 @@
     <Compile Remove="chapter 8_Interface\02_1_DerivedInterface.cs" />
     <Compile Remove="chapter 8_Interface\03_1_Multi_Interface_Inheritance.cs" />
     <Compile Remove="chapter 8_Interface\04_1_Default_Implementation.cs" />
+    <Compile Remove="chapter 8_Interface\05_1_AbstractClass.cs" />
     <Compile Remove="MainApp.cs" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="chapter 7_Class\" />
+    <Folder Include="chapter 8_Interface\" />
   </ItemGroup>
 
 </Project>
