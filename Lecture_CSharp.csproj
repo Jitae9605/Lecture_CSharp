@@ -18,6 +18,11 @@
     <Compile Remove="chapter 7_Class\09_1_Overriding.cs" />
     <Compile Remove="chapter 7_Class\10_1_MethodHiding.cs" />
     <Compile Remove="chapter 7_Class\11_1_ReadOnlyFields.cs" />
+    <Compile Remove="chapter 7_Class\12_1_NestedClass.cs" />
+    <Compile Remove="chapter 7_Class\13_1_PartialClass.cs" />
+    <Compile Remove="chapter 7_Class\14_1_ExtensionMethod.cs" />
+    <Compile Remove="chapter 7_Class\15_1_Structure.cs" />
+    <Compile Remove="chapter 7_Class\16_1_ReadOnlyMethod.cs" />
     <Compile Remove="MainApp.cs" />
   </ItemGroup>
 
