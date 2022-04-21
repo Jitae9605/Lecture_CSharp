@@ -24,7 +24,12 @@
     <Compile Remove="chapter 7_Class\15_1_Structure.cs" />
     <Compile Remove="chapter 7_Class\16_1_ReadOnlyMethod.cs" />
     <Compile Remove="chapter 7_Class\17_1_Tuple.cs" />
+    <Compile Remove="chapter 7_Class\18_1_PosisionalPattern.cs" />
     <Compile Remove="MainApp.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="chapter 7_Class\" />
   </ItemGroup>
 
 </Project>
