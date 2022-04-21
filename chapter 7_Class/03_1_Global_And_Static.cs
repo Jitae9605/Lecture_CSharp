@@ -2,6 +2,7 @@
 
 namespace Global_and_Static
 {
+    // Global과 Static 사이의 차이점
     class Global
     {
         public static int count = 0;

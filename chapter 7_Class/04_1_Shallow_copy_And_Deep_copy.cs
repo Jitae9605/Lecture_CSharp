@@ -3,6 +3,9 @@
 
 namespace Shallow_copy_And_Deep_copy
 {
+    // 얕은 복사와 깊은복사 
+    // 얕은복사 = 복사대상의 주소값을 통한 참조로 복사된것처럼보임
+    // 깊은복사 = 값을 복사해오거나 새로운 객체를 만들어 이를 참조함으로써 둘사이의 연결/의존/참조성을 제거
     class MyClass
     {
         public int Myfield1;

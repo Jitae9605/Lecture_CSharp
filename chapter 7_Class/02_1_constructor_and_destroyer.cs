@@ -1,7 +1,9 @@
 ﻿using System;
 
 namespace constructor_and_destroyer
-{
+{   
+    // 생성자와 소멸자
+
     class Cat
     {
         public Cat()

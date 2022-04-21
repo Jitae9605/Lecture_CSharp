@@ -2,7 +2,8 @@
 
 
 namespace This_2
-{
+{   
+    // this의 유용성(가독성의 향상)
     class ThisConstructor
     {
         class MyClass
