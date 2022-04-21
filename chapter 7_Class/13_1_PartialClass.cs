@@ -2,6 +2,8 @@
 
 namespace PartialClass
 {
+    // 분할클래스
+    // 클래스가 길어지거나 다른곳에서 필요한경우, 파일을 나눠야하는 경우에 클래스 자체를 분할정의할수 있다.
     partial class Myclass
     {
         public void Method1()

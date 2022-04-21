@@ -3,6 +3,7 @@
 
 namespace ReadOnlyMethod
 {
+    // readonly 메소드의 사용
     struct ACSetting
     {
         public double currentInCelsius;     // 현재온도(섭씨)

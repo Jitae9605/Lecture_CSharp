@@ -3,6 +3,7 @@
 
 namespace Tuple
 {
+    // 튜플생성과 사용 및 분해를 통한 사용
     class MainApp
     {
         static void Main(string[] args)

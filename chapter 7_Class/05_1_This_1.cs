@@ -2,6 +2,7 @@
 
 namespace This_1
 {
+    // this의 사용
     class Employee
     {
         private String Name;
@@ -9,7 +10,7 @@ namespace This_1
 
         public void SetName(string Name)
         {
-            this.Name = Name;
+            this.Name = Name;   // this.Name은 클래스멤버변수 private String Name을 의미
         }
 
         public string GetName()

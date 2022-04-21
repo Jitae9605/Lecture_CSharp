@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace ReadOnlyFields
 {
+    // readonly를 선언함으로써 값의 변경을 막을수 있다.
     class Configuration
     {
         private readonly int min; // readonly로 선언 = 생성자에서 처음 생성될때 값 지정. 이후로는 값 변경이 불가능

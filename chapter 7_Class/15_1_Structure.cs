@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Structure
 {
+    // 구조체의 생성 및 사용
     struct Point3D
     {
         public int X;

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 namespace NestedClass
 {
+    // 중첩클래스를 이용해 보안성과 재사용성을 높이고 구분 및 편의성도 높일수 있다.
     class Configuration
     {
         List<ItemValue> listConfig = new List<ItemValue>(); // 챕터 11~12에서 추가로 배운다(지금[22.04.20]은 모름)
