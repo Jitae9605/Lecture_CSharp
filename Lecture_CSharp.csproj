@@ -25,6 +25,11 @@
     <Compile Remove="chapter 7_Class\16_1_ReadOnlyMethod.cs" />
     <Compile Remove="chapter 7_Class\17_1_Tuple.cs" />
     <Compile Remove="chapter 7_Class\18_1_PosisionalPattern.cs" />
+    <Compile Remove="chapter 8_Interface\01_1_Interface_1_File.cs" />
+    <Compile Remove="chapter 8_Interface\01_2_Interface_Console.cs" />
+    <Compile Remove="chapter 8_Interface\02_1_DerivedInterface.cs" />
+    <Compile Remove="chapter 8_Interface\03_1_Multi_Interface_Inheritance.cs" />
+    <Compile Remove="chapter 8_Interface\04_1_Default_Implementation.cs" />
     <Compile Remove="MainApp.cs" />
   </ItemGroup>
 

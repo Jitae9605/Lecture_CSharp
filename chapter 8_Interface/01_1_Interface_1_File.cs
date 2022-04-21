@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace Interface
+namespace Interface_1_File
 {
     // 인터페이스의 정의와 사용_1 : 파일입출력
     interface ILogger                       // 인터페이스 선언
@@ -63,7 +63,7 @@ namespace Interface
         static void Main(string[] args)
         {
             ClimateMonitor monitor = new ClimateMonitor(new FileLogger("MyLog.txt"));   
-            
+            // 경로없이 '파일이름.확장자'만 입력하면 '~(현재 솔루션의 경로)~\bin\Debug\net5.0'폴더 내부에 생성
 
             monitor.start();
         }
