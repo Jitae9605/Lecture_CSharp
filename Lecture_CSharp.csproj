@@ -10,6 +10,15 @@
     <Compile Remove="chapter 10_Array_Collection_And_Indexer\01_1_ArraySample_1.cs" />
     <Compile Remove="chapter 10_Array_Collection_And_Indexer\01_2_ArraySample_2.cs" />
     <Compile Remove="chapter 10_Array_Collection_And_Indexer\02_1_Initializing_Array.cs" />
+    <Compile Remove="chapter 10_Array_Collection_And_Indexer\03_1_Method_And_Properties_From_ArrayClass.cs" />
+    <Compile Remove="chapter 10_Array_Collection_And_Indexer\04_1_Slice_the_Array.cs" />
+    <Compile Remove="chapter 10_Array_Collection_And_Indexer\05_1_2D_Array.cs" />
+    <Compile Remove="chapter 10_Array_Collection_And_Indexer\06_1_3D_Array.cs" />
+    <Compile Remove="chapter 10_Array_Collection_And_Indexer\07_1_JaggedArray.cs" />
+    <Compile Remove="chapter 10_Array_Collection_And_Indexer\08_1_Collection_ArrayList.cs" />
+    <Compile Remove="chapter 10_Array_Collection_And_Indexer\08_2_Collection_Queue.cs" />
+    <Compile Remove="chapter 10_Array_Collection_And_Indexer\08_3_Collection_Stack.cs" />
+    <Compile Remove="chapter 10_Array_Collection_And_Indexer\08_4_Collection_Hashtable.cs" />
     <Compile Remove="chapter 7_Class\01_1_Cat.cs" />
     <Compile Remove="chapter 7_Class\02_1_constructor_and_destroyer.cs" />
     <Compile Remove="chapter 7_Class\03_1_Global_And_Static.cs" />
