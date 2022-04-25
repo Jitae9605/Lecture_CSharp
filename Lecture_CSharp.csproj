@@ -6,6 +6,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="assignment\MyAnser_Q1.cs" />
+    <Compile Remove="chapter 09_Property\01_1_Make_Property.cs" />
     <Compile Remove="chapter 10_Array_Collection_And_Indexer\01_1_ArraySample.cs" />
     <Compile Remove="chapter 10_Array_Collection_And_Indexer\01_1_ArraySample_1.cs" />
     <Compile Remove="chapter 10_Array_Collection_And_Indexer\01_2_ArraySample_2.cs" />
@@ -22,38 +24,38 @@
     <Compile Remove="chapter 10_Array_Collection_And_Indexer\08_5_Collection_Initializing.cs" />
     <Compile Remove="chapter 10_Array_Collection_And_Indexer\09_1_Indexer.cs" />
     <Compile Remove="chapter 10_Array_Collection_And_Indexer\10_1_Foreach_And_IEnumerable.cs" />
-    <Compile Remove="chapter 7_Class\01_1_Cat.cs" />
-    <Compile Remove="chapter 7_Class\02_1_constructor_and_destroyer.cs" />
-    <Compile Remove="chapter 7_Class\03_1_Global_And_Static.cs" />
-    <Compile Remove="chapter 7_Class\04_1_Shallow_copy_And_Deep_copy.cs" />
-    <Compile Remove="chapter 7_Class\05_1_This_1.cs" />
-    <Compile Remove="chapter 7_Class\05_2_This_2.cs" />
-    <Compile Remove="chapter 7_Class\06_1_AccessModifier.cs" />
-    <Compile Remove="chapter 7_Class\07_1_Inheritance.cs" />
-    <Compile Remove="chapter 7_Class\08_1_TypeCasting_Is_and_As.cs" />
-    <Compile Remove="chapter 7_Class\09_1_Overriding.cs" />
-    <Compile Remove="chapter 7_Class\10_1_MethodHiding.cs" />
-    <Compile Remove="chapter 7_Class\11_1_ReadOnlyFields.cs" />
-    <Compile Remove="chapter 7_Class\12_1_NestedClass.cs" />
-    <Compile Remove="chapter 7_Class\13_1_PartialClass.cs" />
-    <Compile Remove="chapter 7_Class\14_1_ExtensionMethod.cs" />
-    <Compile Remove="chapter 7_Class\15_1_Structure.cs" />
-    <Compile Remove="chapter 7_Class\16_1_ReadOnlyMethod.cs" />
-    <Compile Remove="chapter 7_Class\17_1_Tuple.cs" />
-    <Compile Remove="chapter 7_Class\18_1_PosisionalPattern.cs" />
-    <Compile Remove="chapter 8_Interface\01_1_Interface_1_File.cs" />
-    <Compile Remove="chapter 8_Interface\01_2_Interface_Console.cs" />
-    <Compile Remove="chapter 8_Interface\02_1_DerivedInterface.cs" />
-    <Compile Remove="chapter 8_Interface\03_1_Multi_Interface_Inheritance.cs" />
-    <Compile Remove="chapter 8_Interface\04_1_Default_Implementation.cs" />
-    <Compile Remove="chapter 8_Interface\05_1_AbstractClass.cs" />
+    <Compile Remove="chapter 07_Class\01_1_Cat.cs" />
+    <Compile Remove="chapter 07_Class\02_1_constructor_and_destroyer.cs" />
+    <Compile Remove="chapter 07_Class\03_1_Global_And_Static.cs" />
+    <Compile Remove="chapter 07_Class\04_1_Shallow_copy_And_Deep_copy.cs" />
+    <Compile Remove="chapter 07_Class\05_1_This_1.cs" />
+    <Compile Remove="chapter 07_Class\05_2_This_2.cs" />
+    <Compile Remove="chapter 07_Class\06_1_AccessModifier.cs" />
+    <Compile Remove="chapter 07_Class\07_1_Inheritance.cs" />
+    <Compile Remove="chapter 07_Class\08_1_TypeCasting_Is_and_As.cs" />
+    <Compile Remove="chapter 07_Class\09_1_Overriding.cs" />
+    <Compile Remove="chapter 07_Class\10_1_MethodHiding.cs" />
+    <Compile Remove="chapter 07_Class\11_1_ReadOnlyFields.cs" />
+    <Compile Remove="chapter 07_Class\12_1_NestedClass.cs" />
+    <Compile Remove="chapter 07_Class\13_1_PartialClass.cs" />
+    <Compile Remove="chapter 07_Class\14_1_ExtensionMethod.cs" />
+    <Compile Remove="chapter 07_Class\15_1_Structure.cs" />
+    <Compile Remove="chapter 07_Class\16_1_ReadOnlyMethod.cs" />
+    <Compile Remove="chapter 07_Class\17_1_Tuple.cs" />
+    <Compile Remove="chapter 07_Class\18_1_PosisionalPattern.cs" />
+    <Compile Remove="chapter 08_Interface\01_1_Interface_1_File.cs" />
+    <Compile Remove="chapter 08_Interface\01_2_Interface_Console.cs" />
+    <Compile Remove="chapter 08_Interface\02_1_DerivedInterface.cs" />
+    <Compile Remove="chapter 08_Interface\03_1_Multi_Interface_Inheritance.cs" />
+    <Compile Remove="chapter 08_Interface\04_1_Default_Implementation.cs" />
+    <Compile Remove="chapter 08_Interface\05_1_AbstractClass.cs" />
     <Compile Remove="MainApp.cs" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="chapter 10_Array_Collection_And_Indexer\" />
-    <Folder Include="chapter 7_Class\" />
-    <Folder Include="chapter 8_Interface\" />
+    <Folder Include="chapter 07_Class\" />
+    <Folder Include="chapter 08_Interface\" />
   </ItemGroup>
 
 </Project>
