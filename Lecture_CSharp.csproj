@@ -7,7 +7,11 @@
 
   <ItemGroup>
     <Compile Remove="assignment\MyAnser_Q1.cs" />
+    <Compile Remove="assignment\MyAnser_Q2.cs" />
     <Compile Remove="chapter 09_Property\01_1_Make_Property.cs" />
+    <Compile Remove="chapter 09_Property\02_1_Auto_Implemented_Property.cs" />
+    <Compile Remove="chapter 09_Property\03_1_Constructor_and_Property.cs" />
+    <Compile Remove="chapter 09_Property\04_1_InitOnly_AutoProperty.cs" />
     <Compile Remove="chapter 10_Array_Collection_And_Indexer\01_1_ArraySample.cs" />
     <Compile Remove="chapter 10_Array_Collection_And_Indexer\01_1_ArraySample_1.cs" />
     <Compile Remove="chapter 10_Array_Collection_And_Indexer\01_2_ArraySample_2.cs" />

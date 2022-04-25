@@ -30,7 +30,7 @@ namespace Auto_Implemented_Property
             // 값의 입력도 정상적으로 작동
             birth.Name = "서현";
             birth.Birthday = new DateTime(1991, 6, 28);
-            Console.WriteLine($"Name: {birth.Name}");
+            Console.WriteLine($"\nName: {birth.Name}");
             Console.WriteLine($"Birthday: {birth.Birthday.ToShortDateString()}");
             Console.WriteLine($"Age: {birth.Age}");
         }
