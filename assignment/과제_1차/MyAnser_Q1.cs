@@ -25,11 +25,12 @@ Audio를 구입하셨습니다.
 
 namespace Anser
 {
-    public class TV
+    class TV         // TV
     {
-        private int price;
-        private int bonus;
+        private int price;  // 가격
+        private int bonus;  // 보너스
 
+        // 생성자
         public TV(int aprice, int abonus)
         {
             price = aprice;
@@ -48,10 +49,12 @@ namespace Anser
         }
     }
 
-    class Computer
+    class Computer      // 컴퓨터
     {
-        private int price;
-        private int bonus;
+        private int price;  // 가격
+        private int bonus;  // 보너스
+
+        // 생성자
         public Computer(int aprice, int abonus)
         {
             price = aprice;
@@ -70,10 +73,12 @@ namespace Anser
     }
 
 
-    class Audio
+    class Audio     // 오디오
     {
-        private int price;
-        private int bonus;
+        private int price;  // 가격
+        private int bonus;  // 보너스
+
+        // 생성자
         public Audio(int aprice, int abonus)
         {
             price = aprice;
@@ -91,7 +96,7 @@ namespace Anser
         }
     }
        
-    class buyer
+    class buyer // 구매자
     { 
         private int money;
         private int mybonus;
@@ -99,6 +104,7 @@ namespace Anser
         private int buy_Computer_num;
         private int buy_Audio_num;
 
+        // 생성자
         public buyer(int amoney)
         {
             money = amoney;
@@ -219,6 +225,7 @@ namespace Anser
             }
         }
 
+        // 현재까지 구매자가 구매한 구매리스트 출력
         public void PrintList()
         {
             Console.WriteLine("\n < 현재까지 구매한 물품리스트 >");
@@ -233,16 +240,27 @@ namespace Anser
     {
         static void Main(string[] args)
         {
-
+            // 상품 객체들 생성(가격, 보너스 지정)
             TV product_tv = new TV(1000, 1000);
             Computer product_Computer = new Computer(100, 100);
             Audio product_Audio = new Audio(10, 10);
 
+            // 구매자 객체 생성(소지금 지정)
             buyer customer = new buyer(50000);
+
+            // TV 5개 구매
             customer.buyTV(5, product_tv.GetPrice(), product_tv.GetBonus());
+
+            // 컴퓨터 5개 구매
             customer.buyComputer(5, product_Computer.GetPrice(), product_Computer.GetBonus());
+
+            // 오디오 5개 구매
             customer.buyAudio(5, product_Audio.GetPrice(), product_Audio.GetBonus());
+
+            // TV 10개 구매
             customer.buyTV(10, product_tv.GetPrice(), product_tv.GetBonus());
+
+            // TV 1000개 구매 - 돈없어서 결재안됨
             customer.buyTV(1000, product_tv.GetPrice(), product_tv.GetBonus());
 
             customer.PrintList();
