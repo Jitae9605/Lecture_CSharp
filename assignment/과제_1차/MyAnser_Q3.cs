@@ -2,6 +2,7 @@
 
 namespace MyAnser_Q3
 {
+    // 스타크래프트 건물 띄우고 움직이고 내려앉는 매커니즘
     interface Ibuliding
     {
 
