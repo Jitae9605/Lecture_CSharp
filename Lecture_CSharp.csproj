@@ -12,6 +12,9 @@
     <Compile Remove="assignment\Solution_Q2.cs" />
     <Compile Remove="assignment\과제_1차\MyAnser_Q1.cs" />
     <Compile Remove="assignment\과제_1차\MyAnser_Q2.cs" />
+    <Compile Remove="assignment\과제_1차\MyAnser_Q3.cs" />
+    <Compile Remove="assignment\과제_1차\MyAnser_Q4.cs" />
+    <Compile Remove="assignment\과제_1차\MyAnser_Q5.cs" />
     <Compile Remove="assignment\과제_1차\해설\Solution_Q1.cs" />
     <Compile Remove="assignment\과제_1차\해설\Solution_Q2.cs" />
     <Compile Remove="chapter 09_Property\01_1_Make_Property.cs" />
@@ -20,6 +23,9 @@
     <Compile Remove="chapter 09_Property\04_1_InitOnly_AutoProperty.cs" />
     <Compile Remove="chapter 09_Property\05_1_Record_Make_and_Init.cs" />
     <Compile Remove="chapter 09_Property\05_2_Record_With_RecoedCopy.cs" />
+    <Compile Remove="chapter 09_Property\05_3_Record_Equals.cs" />
+    <Compile Remove="chapter 09_Property\06_1_AnonymousType.cs" />
+    <Compile Remove="chapter 09_Property\07_1_Interface_Property.cs" />
     <Compile Remove="chapter 10_Array_Collection_And_Indexer\01_1_ArraySample.cs" />
     <Compile Remove="chapter 10_Array_Collection_And_Indexer\01_1_ArraySample_1.cs" />
     <Compile Remove="chapter 10_Array_Collection_And_Indexer\01_2_ArraySample_2.cs" />
@@ -65,6 +71,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="chapter 09_Property\" />
     <Folder Include="chapter 10_Array_Collection_And_Indexer\" />
     <Folder Include="chapter 07_Class\" />
     <Folder Include="chapter 08_Interface\" />
