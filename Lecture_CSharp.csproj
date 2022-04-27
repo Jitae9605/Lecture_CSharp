@@ -15,6 +15,7 @@
     <Compile Remove="assignment\과제_1차\MyAnser_Q3.cs" />
     <Compile Remove="assignment\과제_1차\MyAnser_Q4.cs" />
     <Compile Remove="assignment\과제_1차\MyAnser_Q5.cs" />
+    <Compile Remove="assignment\과제_1차\MyAnser_Q6.cs" />
     <Compile Remove="assignment\과제_1차\해설\Solution_Q1.cs" />
     <Compile Remove="assignment\과제_1차\해설\Solution_Q2.cs" />
     <Compile Remove="chapter 09_Property\01_1_Make_Property.cs" />
