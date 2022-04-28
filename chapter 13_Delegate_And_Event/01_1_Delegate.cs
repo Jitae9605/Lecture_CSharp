@@ -21,10 +21,10 @@ namespace Delegate
 			MyDelegate Callback;
 
 			Callback = new MyDelegate(Calc.Plus);
-			Console.WriteLine(Callback(3, 4));
+			Console.WriteLine(Callback(3, 4));		// 3 + 4 = 7
 
 			Callback = new MyDelegate(Calculator.Minus);
-			Console.WriteLine(Callback(7, 5));
+			Console.WriteLine(Callback(7, 5));		// 7 - 5 = 2
 
 		}
 	}
