@@ -35,10 +35,6 @@ namespace Generalization_Method
 
 			foreach (string element in target2)
 				Console.WriteLine(element);
-
-
-
-
 		}
 	}
 }

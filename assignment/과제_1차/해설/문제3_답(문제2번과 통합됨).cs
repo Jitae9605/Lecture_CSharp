@@ -3,18 +3,18 @@ using System.Collections;
 
 namespace Ex3ForClass
 {
-    interface IRepairable
+    interface IRepairable       // 수리가능(기계유닛)
     { }
 
-    interface ILiftable
+    interface ILiftable         // 날수있음(특정 건물)
     {
-        public void liftOff();
-        public void move(int x, int y);
-        public void stop();
-        public void land();
+        public void liftOff();          // 난다
+        public void move(int x, int y); // 이동
+        public void stop();             // 멈춘다
+        public void land();             // 착륙한다
     }
 
-    class ILiftableImpl : ILiftable
+    class ILiftableImpl : ILiftable     // 날수있는 건물의 각 메소드별 동작 설정
     {
         public void land()
         {
@@ -37,12 +37,12 @@ namespace Ex3ForClass
         }
     }
 
-    class Unit
+    class Unit                          // 유닛 클래스
     {
-        private int hitPoint;
-        private int maxHitPoint;
+        private int hitPoint;           // 현재체력
+        private int maxHitPoint;        // 최대체력
 
-        public Unit(int hitPoint)
+        public Unit(int hitPoint)       // 유닛생성자
         {
             this.hitPoint = hitPoint;
             this.maxHitPoint = 200;
@@ -64,7 +64,7 @@ namespace Ex3ForClass
         }
     }
 
-    class GroundUnit : Unit
+    class GroundUnit : Unit				// 지상 유닛 : 유닛
     {
         public GroundUnit(int hitPoint) : base(hitPoint)
         {

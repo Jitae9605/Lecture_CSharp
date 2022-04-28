@@ -3,16 +3,16 @@ using System.Collections;
 
 namespace Ex4ForClass
 {
-    public interface Observer
-    {
-        public void update(string msg);
+    public interface Observer                   // 감시자
+	{
+        public void update(string msg);			// 업데이트가 일어나는지를 감시
     }
 
     public interface Subject
     {
-        public void registerObserver(Observer o);
-        public void removeObserver(Observer o);
-        public void notifyObservers();
+        public void registerObserver(Observer o);		// 알림등록
+        public void removeObserver(Observer o);			// 알림제거
+        public void notifyObservers();					// 누구누구 알림등록인지 체크
     }
 
     class AnnouncementForStudent : Subject

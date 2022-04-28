@@ -34,7 +34,7 @@ namespace Ex1ForClass
 
     class Tv : Product
     {
-        public Tv(int price) : base("TV", price)
+        public Tv(int price) : base("TV", price)    // 상속받은 클래스의 생성자
         {
             Console.WriteLine("Tv() 생성자 호출됨.");
         }
@@ -42,7 +42,7 @@ namespace Ex1ForClass
 
     class Computer : Product
     {
-        public Computer(int price) : base("Computer", price)
+        public Computer(int price) : base("Computer", price) // 상속받은 클래스의 생성자
         {
             Console.WriteLine("Computer() 생성자 호출됨.");
         }
@@ -50,7 +50,7 @@ namespace Ex1ForClass
 
     class Audio : Product
     {
-        public Audio(int price) : base("Audio", price)
+        public Audio(int price) : base("Audio", price) // 상속받은 클래스의 생성자
         {
             Console.WriteLine("Audio() 생성자 호출됨.");
         }
