@@ -87,6 +87,8 @@
     <Compile Remove="chapter 11_Generalization\03_3_G_Collection_Stack%28T%29.cs" />
     <Compile Remove="chapter 11_Generalization\03_4_G_Collection_Dictionary%28TKey,TValue%29.cs" />
     <Compile Remove="chapter 12_Exception\01_1_Try_Catch.cs" />
+    <Compile Remove="chapter 12_Exception\02_1_Throw.cs" />
+    <Compile Remove="chapter 12_Exception\02_2_Throw_2.cs" />
     <Compile Remove="MainApp.cs" />
   </ItemGroup>
 
