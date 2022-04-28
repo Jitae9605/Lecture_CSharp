@@ -21,6 +21,12 @@
     <Compile Remove="assignment\과제_1차\해설\Q4_HelpSource.cs" />
     <Compile Remove="assignment\과제_1차\해설\Solution_Q1.cs" />
     <Compile Remove="assignment\과제_1차\해설\Solution_Q2.cs" />
+    <Compile Remove="assignment\과제_1차\해설\문제1_답.cs" />
+    <Compile Remove="assignment\과제_1차\해설\문제3_답%28문제2번과 통합됨%29.cs" />
+    <Compile Remove="assignment\과제_1차\해설\문제4- 참고용 1대1 알림 완성 소스.cs" />
+    <Compile Remove="assignment\과제_1차\해설\문제5_답.cs" />
+    <Compile Remove="assignment\과제_1차\해설\문제6_답.cs" />
+    <Compile Remove="assignment\과제_1차\해설\문제7_답.cs" />
     <Compile Remove="chapter 09_Property\01_1_Make_Property.cs" />
     <Compile Remove="chapter 09_Property\02_1_Auto_Implemented_Property.cs" />
     <Compile Remove="chapter 09_Property\03_1_Constructor_and_Property.cs" />
@@ -71,13 +77,11 @@
     <Compile Remove="chapter 08_Interface\03_1_Multi_Interface_Inheritance.cs" />
     <Compile Remove="chapter 08_Interface\04_1_Default_Implementation.cs" />
     <Compile Remove="chapter 08_Interface\05_1_AbstractClass.cs" />
+    <Compile Remove="chapter 11_Generalization\01_1_Generalization_Method - 복사.cs" />
+    <Compile Remove="chapter 11_Generalization\01_1_Generalization_Method.cs" />
+    <Compile Remove="chapter 11_Generalization\01_2_Generalization_Class.cs" />
+    <Compile Remove="chapter 11_Generalization\02_1_Constraint_Generalization.cs" />
     <Compile Remove="MainApp.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Include="chapter 11_Generalization\01_1_Generalization_Method.cs">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </Compile>
   </ItemGroup>
 
   <ItemGroup>
@@ -85,6 +89,7 @@
     <Folder Include="chapter 07_Class\" />
     <Folder Include="chapter 08_Interface\" />
     <Folder Include="chapter 10_Array_Collection_And_Indexer\" />
+    <Folder Include="chapter 11_Generalization\" />
   </ItemGroup>
 
 </Project>
