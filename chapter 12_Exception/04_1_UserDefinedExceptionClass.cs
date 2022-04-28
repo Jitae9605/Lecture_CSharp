@@ -46,7 +46,17 @@ namespace UserDefinedExceptionClass
 	
 		static void Main(string[] args)
 		{
-
+			try
+			{
+				Console.WriteLine("0x{0:X}", MergeARGB(255, 111, 111, 111));
+				Console.WriteLine("0x{0:X}", MergeARGB(  1,  65, 192, 128));
+				Console.WriteLine("0x{0:X}", MergeARGB(  0, 255, 255, 300));		// 300은 범위를 벗어남
+			}
+			catch (InvalidArgumentException e)
+			{
+				Console.WriteLine(e.Message);
+				Console.WriteLine($"Argument : {e.Argument}, Range : {e.Range}");
+			}
 		}
 	}
 }

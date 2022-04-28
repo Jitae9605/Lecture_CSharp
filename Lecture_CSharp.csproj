@@ -89,6 +89,8 @@
     <Compile Remove="chapter 12_Exception\01_1_Try_Catch.cs" />
     <Compile Remove="chapter 12_Exception\02_1_Throw.cs" />
     <Compile Remove="chapter 12_Exception\02_2_Throw_2.cs" />
+    <Compile Remove="chapter 12_Exception\03_1_Finally.cs" />
+    <Compile Remove="chapter 12_Exception\04_1_UserDefinedExceptionClass.cs" />
     <Compile Remove="MainApp.cs" />
   </ItemGroup>
 
