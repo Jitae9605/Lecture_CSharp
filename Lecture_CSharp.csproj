@@ -17,6 +17,7 @@
     <Compile Remove="assignment\과제_1차\MyAnser_Q5.cs" />
     <Compile Remove="assignment\과제_1차\MyAnser_Q6.cs" />
     <Compile Remove="assignment\과제_1차\MyAnser_Q7.cs" />
+    <Compile Remove="assignment\과제_1차\temp.cs" />
     <Compile Remove="assignment\과제_1차\해설\Q4_HelpSource.cs" />
     <Compile Remove="assignment\과제_1차\해설\Solution_Q1.cs" />
     <Compile Remove="assignment\과제_1차\해설\Solution_Q2.cs" />
@@ -39,6 +40,7 @@
     <Compile Remove="chapter 10_Array_Collection_And_Indexer\06_1_3D_Array.cs" />
     <Compile Remove="chapter 10_Array_Collection_And_Indexer\07_1_JaggedArray.cs" />
     <Compile Remove="chapter 10_Array_Collection_And_Indexer\08_1_Collection_ArrayList.cs" />
+    <Compile Remove="chapter 10_Array_Collection_And_Indexer\08_2_Collection_Queue.cs" />
     <Compile Remove="chapter 10_Array_Collection_And_Indexer\08_3_Collection_Stack.cs" />
     <Compile Remove="chapter 10_Array_Collection_And_Indexer\08_4_Collection_Hashtable.cs" />
     <Compile Remove="chapter 10_Array_Collection_And_Indexer\08_5_Collection_Initializing.cs" />
@@ -73,9 +75,16 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Include="chapter 11_Generalization\01_1_Generalization_Method.cs">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="chapter 09_Property\" />
     <Folder Include="chapter 07_Class\" />
     <Folder Include="chapter 08_Interface\" />
+    <Folder Include="chapter 10_Array_Collection_And_Indexer\" />
   </ItemGroup>
 
 </Project>
