@@ -91,6 +91,7 @@
     <Compile Remove="chapter 12_Exception\02_2_Throw_2.cs" />
     <Compile Remove="chapter 12_Exception\03_1_Finally.cs" />
     <Compile Remove="chapter 12_Exception\04_1_UserDefinedExceptionClass.cs" />
+    <Compile Remove="chapter 12_Exception\05_1_StackTrace.cs" />
     <Compile Remove="MainApp.cs" />
   </ItemGroup>
 
@@ -100,6 +101,7 @@
     <Folder Include="chapter 08_Interface\" />
     <Folder Include="chapter 10_Array_Collection_And_Indexer\" />
     <Folder Include="chapter 11_Generalization\" />
+    <Folder Include="chapter 12_Exception\" />
   </ItemGroup>
 
 </Project>
