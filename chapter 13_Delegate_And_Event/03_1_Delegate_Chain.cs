@@ -45,23 +45,31 @@ namespace Delegate_Chain
 
 			Console.WriteLine();
 
-			// -= 연산자를 이용한 체인 끊기
+			// 2. -= 연산자를 이용한 체인 끊기
+			notifier.EventOccured -= listener2.SomthingHappend;
+			notifier.EventOccured("Download Complete");
+
+			Console.WriteLine();
+
+
+			// 3. +, = 연산자를 이용한 체인만들기
 			notifier.EventOccured = new Notify(listener2.SomthingHappend)
 									+ new Notify(listener3.SomthingHappend);
 			notifier.EventOccured("Nuclear launch detected.");
 
 			Console.WriteLine();
 
-			// 2. +, = 연산자를 이용한 체인만들기
+			// 4. Delegate.Combine()메소드를 이용한 체인만들기
 			Notify notify1 = new Notify(listener1.SomthingHappend);
 			Notify notify2 = new Notify(listener2.SomthingHappend);
 
-			// 3. Delegate.Combine()메소드를 이용한 체인만들기
 			notifier.EventOccured = (Notify)Delegate.Combine(notify1, notify2);
 			notifier.EventOccured("Fire!");
 
 			Console.WriteLine();
 
+
+			// 5. Delegate.Remove()메소드를 이용한 체인끊기
 			notifier.EventOccured = (Notify)Delegate.Remove(notifier.EventOccured, notify2);
 			notifier.EventOccured("RPG!");
 		}
