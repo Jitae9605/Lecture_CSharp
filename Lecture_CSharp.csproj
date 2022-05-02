@@ -98,7 +98,12 @@
     <Compile Remove="chapter 13_Delegate_And_Event\03_1_Delegate_Chain.cs" />
     <Compile Remove="chapter 13_Delegate_And_Event\04_1_Anonymous_Method.cs" />
     <Compile Remove="chapter 13_Delegate_And_Event\05_1_Event_And_EventHandler.cs" />
+    <Compile Remove="chapter 14_LamdaExpression\01_1_LamdaExpression,cs.cs" />
+    <Compile Remove="chapter 14_LamdaExpression\02_1_Statement_Lamda.cs" />
+    <Compile Remove="chapter 14_LamdaExpression\03_1_Func_Lamda.cs" />
+    <Compile Remove="chapter 14_LamdaExpression\03_2_Action_Lamda.cs" />
     <Compile Remove="MainApp.cs" />
+    <Compile Remove="코딩테스트연습\신고결과받기.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -109,6 +114,7 @@
     <Folder Include="chapter 11_Generalization\" />
     <Folder Include="chapter 12_Exception\" />
     <Folder Include="chapter 13_Delegate_And_Event\" />
+    <Folder Include="코딩테스트연습\" />
   </ItemGroup>
 
 </Project>

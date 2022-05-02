@@ -14,18 +14,18 @@ namespace a
 			string[] reportList = report.Distinct().ToArray();
 
 			// 신고자
-			string[] reporter = null;
+			string[] reporter = new string[10];
 
 			// 피신고자
-			string target = null;
+			string target = "0" ;
 
 			// 회원별 신고 누적수
-			int[] reportNum = { 0, };
+			int[] reportNum = new int[10];
 
 			// 신고기록
 			for (int i = 0; i < report.Length; i++)
 			{
-				string[] temp = report[i].Split(' ');
+				string[] temp = reportList[i].Split(' ');
 				reporter[i] = temp[0];
 				target = temp[1];
 
@@ -33,7 +33,7 @@ namespace a
 				{
 					if (id_list[j] == target)
 					{
-						reportNum[j]++;
+						reportNum[j]++;						// 신고당한횟수
 					}
 
 				}
