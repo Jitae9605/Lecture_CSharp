@@ -104,6 +104,12 @@
     <Compile Remove="chapter 14_LamdaExpression\03_2_Action_Lamda.cs" />
     <Compile Remove="chapter 14_LamdaExpression\04_1_Expression_Bodied_Member.cs" />
     <Compile Remove="chapter 15_LinQ\01_1_LinQ_Basic.cs" />
+    <Compile Remove="chapter 15_LinQ\01_2_LInQ_Application.cs" />
+    <Compile Remove="chapter 15_LinQ\02_1_Multi_From_LINQ.cs" />
+    <Compile Remove="chapter 15_LinQ\03_1_Group_By.cs" />
+    <Compile Remove="chapter 15_LinQ\04_1_Join.cs" />
+    <Compile Remove="chapter 15_LinQ\04_2_Outer_Join.cs" />
+    <Compile Remove="chapter 15_LinQ\05_1_LINQ_Method.cs" />
     <Compile Remove="MainApp.cs" />
     <Compile Remove="코딩테스트연습\신고결과받기.cs" />
   </ItemGroup>
