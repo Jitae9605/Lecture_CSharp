@@ -110,6 +110,12 @@
     <Compile Remove="chapter 15_LinQ\04_1_Join.cs" />
     <Compile Remove="chapter 15_LinQ\04_2_Outer_Join.cs" />
     <Compile Remove="chapter 15_LinQ\05_1_LINQ_Method.cs" />
+    <Compile Remove="chapter 15_LinQ\05_2_LINQ_Method_Application.cs" />
+    <Compile Remove="chapter 18_File_And_Directory\01_1_Print_File_And_Directory_Info.cs" />
+    <Compile Remove="chapter 18_File_And_Directory\01_2_Create_File_And_Directory.cs" />
+    <Compile Remove="chapter 18_File_And_Directory\02_1_FileStream.cs" />
+    <Compile Remove="chapter 18_File_And_Directory\03_1_Filestream_Position.cs" />
+    <Compile Remove="chapter 18_File_And_Directory\04_1_Skip_Close_By_Using.cs" />
     <Compile Remove="MainApp.cs" />
     <Compile Remove="코딩테스트연습\신고결과받기.cs" />
   </ItemGroup>
@@ -123,6 +129,7 @@
     <Folder Include="chapter 12_Exception\" />
     <Folder Include="chapter 13_Delegate_And_Event\" />
     <Folder Include="chapter 14_LamdaExpression\" />
+    <Folder Include="chapter 15_LinQ\" />
     <Folder Include="코딩테스트연습\" />
   </ItemGroup>
 
