@@ -116,6 +116,12 @@
     <Compile Remove="chapter 18_File_And_Directory\02_1_FileStream.cs" />
     <Compile Remove="chapter 18_File_And_Directory\03_1_Filestream_Position.cs" />
     <Compile Remove="chapter 18_File_And_Directory\04_1_Skip_Close_By_Using.cs" />
+    <Compile Remove="chapter 18_File_And_Directory\05_1_BinaryFile.cs" />
+    <Compile Remove="chapter 18_File_And_Directory\06_1_TextFile_Write_Read.cs" />
+    <Compile Remove="chapter 18_File_And_Directory\07_1_Serialization_And_Formatter.cs" />
+    <Compile Remove="chapter 18_File_And_Directory\07_2_Serialization_And_Collection.cs" />
+    <Compile Remove="chapter 19_Thread_And_Task\01_1_Multi_Thread.cs" />
+    <Compile Remove="chapter 19_Thread_And_Task\02_1_AbortingThread.cs" />
     <Compile Remove="MainApp.cs" />
     <Compile Remove="코딩테스트연습\신고결과받기.cs" />
   </ItemGroup>
@@ -130,6 +136,7 @@
     <Folder Include="chapter 13_Delegate_And_Event\" />
     <Folder Include="chapter 14_LamdaExpression\" />
     <Folder Include="chapter 15_LinQ\" />
+    <Folder Include="chapter 18_File_And_Directory\" />
     <Folder Include="코딩테스트연습\" />
   </ItemGroup>
 
