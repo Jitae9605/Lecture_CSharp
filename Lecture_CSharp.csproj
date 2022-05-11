@@ -131,6 +131,7 @@
     <Compile Remove="chapter 19_Thread_And_Task\06_1_Asynchronous_Task_1.cs" />
     <Compile Remove="chapter 19_Thread_And_Task\06_2_Asynchronous_Task_2.cs" />
     <Compile Remove="chapter 19_Thread_And_Task\06_3_Asynchronous_Task_3.cs" />
+    <Compile Remove="chapter 19_Thread_And_Task\07_1_async_And_await.cs" />
     <Compile Remove="MainApp.cs" />
     <Compile Remove="코딩테스트연습\신고결과받기.cs" />
   </ItemGroup>

@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 
 namespace async_And_await
 {
+	//async 한정자와 await 연산자를 이용한 비동기 클래스의 작성
 	class MainApp
 	{
 		async static private void MyMethod(int count)
