@@ -127,6 +127,10 @@
     <Compile Remove="chapter 19_Thread_And_Task\05_1_Syncronize_CriticalSection_Lock.cs" />
     <Compile Remove="chapter 19_Thread_And_Task\05_1_Syncronize_Lock.cs" />
     <Compile Remove="chapter 19_Thread_And_Task\05_2_Syncronize_Monitor.cs" />
+    <Compile Remove="chapter 19_Thread_And_Task\05_3_Syncronize_Moniter_Wait_Pulse.cs" />
+    <Compile Remove="chapter 19_Thread_And_Task\06_1_Asynchronous_Task_1.cs" />
+    <Compile Remove="chapter 19_Thread_And_Task\06_2_Asynchronous_Task_2.cs" />
+    <Compile Remove="chapter 19_Thread_And_Task\06_3_Asynchronous_Task_3.cs" />
     <Compile Remove="MainApp.cs" />
     <Compile Remove="코딩테스트연습\신고결과받기.cs" />
   </ItemGroup>
