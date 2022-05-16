@@ -9,12 +9,15 @@
     <Compile Remove="chapter 17_Dynamic\**" />
     <Compile Remove="chapter 20_WinForm\**" />
     <Compile Remove="chapter 21_Network_TCPSokect\**" />
+    <Compile Remove="DB연결툴_ADO.Net\**" />
     <EmbeddedResource Remove="chapter 17_Dynamic\**" />
     <EmbeddedResource Remove="chapter 20_WinForm\**" />
     <EmbeddedResource Remove="chapter 21_Network_TCPSokect\**" />
+    <EmbeddedResource Remove="DB연결툴_ADO.Net\**" />
     <None Remove="chapter 17_Dynamic\**" />
     <None Remove="chapter 20_WinForm\**" />
     <None Remove="chapter 21_Network_TCPSokect\**" />
+    <None Remove="DB연결툴_ADO.Net\**" />
   </ItemGroup>
 
   <ItemGroup>
@@ -129,6 +132,7 @@
     <Compile Remove="chapter 16_Reflection_And_Atribute\01_3_R_Builder.cs" />
     <Compile Remove="chapter 16_Reflection_And_Atribute\02_1_Attribute_Obsolete.cs" />
     <Compile Remove="chapter 16_Reflection_And_Atribute\02_2_A_CallerInfo.cs" />
+    <Compile Remove="chapter 16_Reflection_And_Atribute\02_3_A_HistoryAttribute.cs" />
     <Compile Remove="chapter 18_File_And_Directory\01_1_Print_File_And_Directory_Info.cs" />
     <Compile Remove="chapter 18_File_And_Directory\01_2_Create_File_And_Directory.cs" />
     <Compile Remove="chapter 18_File_And_Directory\02_1_FileStream.cs" />
@@ -152,6 +156,11 @@
     <Compile Remove="chapter 19_Thread_And_Task\07_1_async_And_await.cs" />
     <Compile Remove="chapter 19_Thread_And_Task\07_2_async_And_await_API.cs" />
     <Compile Remove="MainApp.cs" />
+    <Compile Remove="_CSharp_Q200\A_003_Input.cs" />
+    <Compile Remove="_CSharp_Q200\A_005_string.cs" />
+    <Compile Remove="_CSharp_Q200\A_008_Console_WriteLine_Format.cs" />
+    <Compile Remove="_CSharp_Q200\A_3_Input.cs" />
+    <Compile Remove="_CSharp_Q200\A_5_string.cs" />
     <Compile Remove="코딩테스트연습\신고결과받기.cs" />
   </ItemGroup>
 
@@ -165,9 +174,9 @@
     <Folder Include="chapter 13_Delegate_And_Event\" />
     <Folder Include="chapter 14_LamdaExpression\" />
     <Folder Include="chapter 15_LinQ\" />
+    <Folder Include="chapter 16_Reflection_And_Atribute\" />
     <Folder Include="chapter 18_File_And_Directory\" />
     <Folder Include="chapter 19_Thread_And_Task\" />
-    <Folder Include="DB연결툴_ADO.Net\" />
     <Folder Include="코딩테스트연습\" />
   </ItemGroup>
 
