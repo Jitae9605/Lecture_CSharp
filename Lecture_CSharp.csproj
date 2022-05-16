@@ -167,6 +167,7 @@
     <Folder Include="chapter 15_LinQ\" />
     <Folder Include="chapter 18_File_And_Directory\" />
     <Folder Include="chapter 19_Thread_And_Task\" />
+    <Folder Include="DB연결툴_ADO.Net\" />
     <Folder Include="코딩테스트연습\" />
   </ItemGroup>
 
