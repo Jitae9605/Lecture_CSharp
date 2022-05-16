@@ -6,6 +6,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="chapter 17_Dynamic\**" />
+    <Compile Remove="chapter 20_WinForm\**" />
+    <Compile Remove="chapter 21_Network_TCPSokect\**" />
+    <EmbeddedResource Remove="chapter 17_Dynamic\**" />
+    <EmbeddedResource Remove="chapter 20_WinForm\**" />
+    <EmbeddedResource Remove="chapter 21_Network_TCPSokect\**" />
+    <None Remove="chapter 17_Dynamic\**" />
+    <None Remove="chapter 20_WinForm\**" />
+    <None Remove="chapter 21_Network_TCPSokect\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Remove="assignment\MyAnser_Q1.cs" />
     <Compile Remove="assignment\MyAnser_Q2.cs" />
     <Compile Remove="assignment\Solution_Q1.cs" />
@@ -155,6 +167,7 @@
     <Folder Include="chapter 15_LinQ\" />
     <Folder Include="chapter 18_File_And_Directory\" />
     <Folder Include="chapter 19_Thread_And_Task\" />
+    <Folder Include="DB연결툴_ADO.Net\" />
     <Folder Include="코딩테스트연습\" />
   </ItemGroup>
 
