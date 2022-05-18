@@ -20,7 +20,7 @@ namespace Car_Management_System
 			InitializeComponent();
 		}
 
-		private void PrintTable()	// 데이터베이스 전체 출력
+		private void PrintTable()	// 데이터베이스 전체 출력 == 전체검색
 		{
 			listView1.Items.Clear();
 			Con = new SqlConnection();	// 커넥터 선언
@@ -49,12 +49,12 @@ namespace Car_Management_System
 			Con.Close();
 		}
 
-		private void Form1_Load(object sender, EventArgs e)
+		private void Form1_Load(object sender, EventArgs e)	// form로드됨과 동시에 수행할
 		{
 			PrintTable();
 		}
 
-		private void btnSerchAll_Click(object sender, EventArgs e)
+		private void btnSerchAll_Click(object sender, EventArgs e)	// 전체검색 버튼 클릭시 수행
 		{
 			PrintTable();
 		}
@@ -119,6 +119,7 @@ namespace Car_Management_System
 			Con.ConnectionString = "Server=(local);database=ADOTest;" + "Integrated Security = true;";
 			Con.Open();
 
+			// sql문장을 작성하되 파라미터로 텍스트박스의 값들으 각각 가져와 sql문장을 형성
 			string Sql = "INSERT INTO TB_CAR_INFO VALUES (@carName,@carYear,@carPrice,@carDoor)";
 			SqlCommand Com = new SqlCommand(Sql, Con);
 			Com.Parameters.Add("@carName", SqlDbType.NVarChar, 30);
@@ -129,26 +130,29 @@ namespace Car_Management_System
 			Com.Parameters["@carYear"].Value = textYear.Text;
 			Com.Parameters["@carPrice"].Value = textPrice.Text;
 			Com.Parameters["@carDoor"].Value = textDoor.Text;
-			Com.ExecuteNonQuery();
+			Com.ExecuteNonQuery();	// sql문장 실행
 
+			// 삽입 후 텍스트박스 비우기
 			textName.Clear();
 			textYear.Clear();
 			textDoor.Clear();
 			textPrice.Clear();
-			MessageBox.Show("정상적으로 데이터를 저장했습니다.", "알림");
+			MessageBox.Show("정상적으로 데이터를 저장했습니다.", "알림");	// 저장완료 메세지박스 팝업
 			Con.Close();
 
 			PrintTable();
 		}
 
-		private void btnChange_Click(object sender, EventArgs e)
+		private void btnChange_Click(object sender, EventArgs e)	// 수정버튼 클릭스 수행
 		{
 			Con = new SqlConnection();
 			Con.ConnectionString = "Server=(local);database=ADOTest;" + "Integrated Security = true;";
 			Con.Open();
 
-			ListViewItem selectedNickname = listView1.SelectedItems[0];
+			// 수정하고자하는 대상을 선택한후 값을 입력하고 수정버튼을 눌러 수정
+			ListViewItem selectedNickname = listView1.SelectedItems[0];	// 선택한 대상의 인덱스값을 가져온다
 
+			// 텍스트박스에서 값을 가져와 update sql문을 작성(대상을 가져온 선택된 대상의 인덱스 값을 where로 해서 수행)
 			string Sql = string.Format("update TB_CAR_INFO set carName = @carName, carYear = @carYear, carPrice = @carPrice, carDoor = @carDoor where id = {0}", selectedNickname.Text);
 			SqlCommand Com = new SqlCommand(Sql, Con);
 			Com.Parameters.Add("@carName", SqlDbType.NVarChar, 30);
@@ -159,7 +163,7 @@ namespace Car_Management_System
 			Com.Parameters["@carYear"].Value = textYear.Text;
 			Com.Parameters["@carPrice"].Value = textPrice.Text;
 			Com.Parameters["@carDoor"].Value = textDoor.Text;
-			Com.ExecuteNonQuery();
+			Com.ExecuteNonQuery();	// sql문 실행
 
 			MessageBox.Show("정상적으로 데이터를 수정했습니다.", "알림");
 			Con.Close();
@@ -167,27 +171,29 @@ namespace Car_Management_System
 			PrintTable();
 		}
 
-		private void btnSerchSome_Click(object sender, EventArgs e)
+		private void btnSerchSome_Click(object sender, EventArgs e)	// 조건검색
 		{
 			listView1.Items.Clear();
 			Con = new SqlConnection();
 			Con.ConnectionString = "Server=(local);database=ADOTest;" + "Integrated Security = true;";
 			SqlDataReader R;
 			Con.Open();
-			string MakeWhere = "";
-			int checknum = 0;
+			string MakeWhere = "";	// 조건을 조합하고 합칠때 사용할 빈 string
+			int checknum = 0;       // 현재 합쳐진 string의 갯수
 
-			if(!(String.IsNullOrEmpty(textName.Text)))
+			// 텍스트박스가 비어있지 않으면 값을 가져와서 MakeWhere에 합친다(추가한다)
+			if (!(String.IsNullOrEmpty(textName.Text)))
 			{
 				MakeWhere += "carName = '";
 				MakeWhere += textName.Text;
-				MakeWhere += "'";
-				checknum++;
+				MakeWhere += "'";			// carName은 nvarchar형으로 select 할때 ''로 묶어줘야함을 까먹지 말것
+				checknum++;	// 이를 통해 몇개의 조건인지와 그에따른 or의 추가를 판단.
 			}
 
 			if (!(String.IsNullOrEmpty(textYear.Text)))
 			{
-				if (checknum > 0) MakeWhere += " or ";
+				// checknum이 0이 아니면 앞에서 하나가 추가되었다는것이므로 앞에 or을 먼저 붙인다음 조건을 추가한다.
+				if (checknum > 0) MakeWhere += " or ";	
 				MakeWhere += "carYear = ";
 				MakeWhere += textYear.Text;
 				checknum++;
@@ -208,9 +214,10 @@ namespace Car_Management_System
 				MakeWhere +=  textDoor.Text;
 			}
 
+			// 위에서 만든 MakeWhere을 통해 조건 select문을 만듬
 			string Sql = string.Format("select * FROM TB_CAR_INFO where {0}", MakeWhere);
 			SqlCommand Com = new SqlCommand(Sql, Con);
-			R = Com.ExecuteReader();
+			R = Com.ExecuteReader();	// sql문실행
 
 			while (R.Read())
 			{
