@@ -33,15 +33,20 @@ namespace Car_Management_System
 			this.lbYear = new System.Windows.Forms.Label();
 			this.lbPrice = new System.Windows.Forms.Label();
 			this.lbType = new System.Windows.Forms.Label();
-			this.textBox1 = new System.Windows.Forms.TextBox();
-			this.textBox2 = new System.Windows.Forms.TextBox();
-			this.textBox3 = new System.Windows.Forms.TextBox();
-			this.textBox4 = new System.Windows.Forms.TextBox();
+			this.textName = new System.Windows.Forms.TextBox();
+			this.textYear = new System.Windows.Forms.TextBox();
+			this.textPrice = new System.Windows.Forms.TextBox();
+			this.textDoor = new System.Windows.Forms.TextBox();
 			this.btnSave = new System.Windows.Forms.Button();
 			this.btnChange = new System.Windows.Forms.Button();
 			this.btnSerchSome = new System.Windows.Forms.Button();
 			this.btnSerchAll = new System.Windows.Forms.Button();
 			this.listView1 = new System.Windows.Forms.ListView();
+			this.lvID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+			this.lvName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+			this.lvYear = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+			this.lvPrice = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+			this.lvDoor = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
 			this.SuspendLayout();
 			// 
 			// lbName
@@ -80,33 +85,33 @@ namespace Car_Management_System
 			this.lbType.TabIndex = 1;
 			this.lbType.Text = "도 어";
 			// 
-			// textBox1
+			// textName
 			// 
-			this.textBox1.Location = new System.Drawing.Point(51, 246);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(100, 21);
-			this.textBox1.TabIndex = 2;
+			this.textName.Location = new System.Drawing.Point(51, 246);
+			this.textName.Name = "textName";
+			this.textName.Size = new System.Drawing.Size(100, 21);
+			this.textName.TabIndex = 2;
 			// 
-			// textBox2
+			// textYear
 			// 
-			this.textBox2.Location = new System.Drawing.Point(51, 273);
-			this.textBox2.Name = "textBox2";
-			this.textBox2.Size = new System.Drawing.Size(100, 21);
-			this.textBox2.TabIndex = 2;
+			this.textYear.Location = new System.Drawing.Point(51, 273);
+			this.textYear.Name = "textYear";
+			this.textYear.Size = new System.Drawing.Size(100, 21);
+			this.textYear.TabIndex = 2;
 			// 
-			// textBox3
+			// textPrice
 			// 
-			this.textBox3.Location = new System.Drawing.Point(51, 300);
-			this.textBox3.Name = "textBox3";
-			this.textBox3.Size = new System.Drawing.Size(100, 21);
-			this.textBox3.TabIndex = 2;
+			this.textPrice.Location = new System.Drawing.Point(51, 300);
+			this.textPrice.Name = "textPrice";
+			this.textPrice.Size = new System.Drawing.Size(100, 21);
+			this.textPrice.TabIndex = 2;
 			// 
-			// textBox4
+			// textDoor
 			// 
-			this.textBox4.Location = new System.Drawing.Point(51, 327);
-			this.textBox4.Name = "textBox4";
-			this.textBox4.Size = new System.Drawing.Size(100, 21);
-			this.textBox4.TabIndex = 2;
+			this.textDoor.Location = new System.Drawing.Point(51, 327);
+			this.textDoor.Name = "textDoor";
+			this.textDoor.Size = new System.Drawing.Size(100, 21);
+			this.textDoor.TabIndex = 2;
 			// 
 			// btnSave
 			// 
@@ -116,6 +121,7 @@ namespace Car_Management_System
 			this.btnSave.TabIndex = 3;
 			this.btnSave.Text = "저 장";
 			this.btnSave.UseVisualStyleBackColor = true;
+			this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
 			// 
 			// btnChange
 			// 
@@ -125,6 +131,7 @@ namespace Car_Management_System
 			this.btnChange.TabIndex = 3;
 			this.btnChange.Text = "수 정";
 			this.btnChange.UseVisualStyleBackColor = true;
+			this.btnChange.Click += new System.EventHandler(this.btnChange_Click);
 			// 
 			// btnSerchSome
 			// 
@@ -134,6 +141,7 @@ namespace Car_Management_System
 			this.btnSerchSome.TabIndex = 3;
 			this.btnSerchSome.Text = "조건검색";
 			this.btnSerchSome.UseVisualStyleBackColor = true;
+			this.btnSerchSome.Click += new System.EventHandler(this.btnSerchSome_Click);
 			// 
 			// btnSerchAll
 			// 
@@ -143,30 +151,61 @@ namespace Car_Management_System
 			this.btnSerchAll.TabIndex = 3;
 			this.btnSerchAll.Text = "전체검색";
 			this.btnSerchAll.UseVisualStyleBackColor = true;
+			this.btnSerchAll.Click += new System.EventHandler(this.btnSerchAll_Click);
 			// 
 			// listView1
 			// 
+			this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.lvID,
+            this.lvName,
+            this.lvYear,
+            this.lvPrice,
+            this.lvDoor});
+			this.listView1.FullRowSelect = true;
+			this.listView1.GridLines = true;
 			this.listView1.HideSelection = false;
-			this.listView1.Location = new System.Drawing.Point(12, 12);
+			this.listView1.Location = new System.Drawing.Point(14, 12);
 			this.listView1.Name = "listView1";
-			this.listView1.Size = new System.Drawing.Size(310, 225);
+			this.listView1.Size = new System.Drawing.Size(308, 215);
 			this.listView1.TabIndex = 4;
 			this.listView1.UseCompatibleStateImageBehavior = false;
+			this.listView1.View = System.Windows.Forms.View.Details;
+			this.listView1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.listView1_MouseClick);
+			// 
+			// lvID
+			// 
+			this.lvID.Text = "번호";
+			// 
+			// lvName
+			// 
+			this.lvName.Text = "이 름";
+			// 
+			// lvYear
+			// 
+			this.lvYear.Text = "년식";
+			// 
+			// lvPrice
+			// 
+			this.lvPrice.Text = "가 격";
+			// 
+			// lvDoor
+			// 
+			this.lvDoor.Text = "도 어";
 			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(349, 385);
+			this.ClientSize = new System.Drawing.Size(349, 365);
 			this.Controls.Add(this.listView1);
 			this.Controls.Add(this.btnSerchAll);
 			this.Controls.Add(this.btnSerchSome);
 			this.Controls.Add(this.btnChange);
 			this.Controls.Add(this.btnSave);
-			this.Controls.Add(this.textBox4);
-			this.Controls.Add(this.textBox3);
-			this.Controls.Add(this.textBox2);
-			this.Controls.Add(this.textBox1);
+			this.Controls.Add(this.textDoor);
+			this.Controls.Add(this.textPrice);
+			this.Controls.Add(this.textYear);
+			this.Controls.Add(this.textName);
 			this.Controls.Add(this.lbType);
 			this.Controls.Add(this.lbPrice);
 			this.Controls.Add(this.lbYear);
@@ -185,15 +224,20 @@ namespace Car_Management_System
 		private System.Windows.Forms.Label lbYear;
 		private System.Windows.Forms.Label lbPrice;
 		private System.Windows.Forms.Label lbType;
-		private System.Windows.Forms.TextBox textBox1;
-		private System.Windows.Forms.TextBox textBox2;
-		private System.Windows.Forms.TextBox textBox3;
-		private System.Windows.Forms.TextBox textBox4;
+		private System.Windows.Forms.TextBox textName;
+		private System.Windows.Forms.TextBox textYear;
+		private System.Windows.Forms.TextBox textPrice;
+		private System.Windows.Forms.TextBox textDoor;
 		private System.Windows.Forms.Button btnSave;
 		private System.Windows.Forms.Button btnChange;
 		private System.Windows.Forms.Button btnSerchSome;
 		private System.Windows.Forms.Button btnSerchAll;
 		private System.Windows.Forms.ListView listView1;
+		private System.Windows.Forms.ColumnHeader lvID;
+		private System.Windows.Forms.ColumnHeader lvName;
+		private System.Windows.Forms.ColumnHeader lvYear;
+		private System.Windows.Forms.ColumnHeader lvPrice;
+		private System.Windows.Forms.ColumnHeader lvDoor;
 	}
 }
 

@@ -54,5 +54,10 @@ namespace mook_EduMgr
             this.txtId.Text = "";
             this.txtPwd.Text = "";
         }
-    }
+
+		private void Form1_Load(object sender, EventArgs e)
+		{
+
+		}
+	}
 }
