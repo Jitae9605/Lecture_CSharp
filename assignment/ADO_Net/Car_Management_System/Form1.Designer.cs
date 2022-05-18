@@ -52,7 +52,7 @@ namespace Car_Management_System
 			// lbName
 			// 
 			this.lbName.AutoSize = true;
-			this.lbName.Location = new System.Drawing.Point(12, 249);
+			this.lbName.Location = new System.Drawing.Point(27, 249);
 			this.lbName.Name = "lbName";
 			this.lbName.Size = new System.Drawing.Size(33, 12);
 			this.lbName.TabIndex = 1;
@@ -61,7 +61,7 @@ namespace Car_Management_System
 			// lbYear
 			// 
 			this.lbYear.AutoSize = true;
-			this.lbYear.Location = new System.Drawing.Point(12, 276);
+			this.lbYear.Location = new System.Drawing.Point(27, 276);
 			this.lbYear.Name = "lbYear";
 			this.lbYear.Size = new System.Drawing.Size(33, 12);
 			this.lbYear.TabIndex = 1;
@@ -70,7 +70,7 @@ namespace Car_Management_System
 			// lbPrice
 			// 
 			this.lbPrice.AutoSize = true;
-			this.lbPrice.Location = new System.Drawing.Point(12, 303);
+			this.lbPrice.Location = new System.Drawing.Point(27, 303);
 			this.lbPrice.Name = "lbPrice";
 			this.lbPrice.Size = new System.Drawing.Size(33, 12);
 			this.lbPrice.TabIndex = 1;
@@ -79,7 +79,7 @@ namespace Car_Management_System
 			// lbType
 			// 
 			this.lbType.AutoSize = true;
-			this.lbType.Location = new System.Drawing.Point(12, 330);
+			this.lbType.Location = new System.Drawing.Point(27, 330);
 			this.lbType.Name = "lbType";
 			this.lbType.Size = new System.Drawing.Size(33, 12);
 			this.lbType.TabIndex = 1;
@@ -87,35 +87,35 @@ namespace Car_Management_System
 			// 
 			// textName
 			// 
-			this.textName.Location = new System.Drawing.Point(51, 246);
+			this.textName.Location = new System.Drawing.Point(76, 246);
 			this.textName.Name = "textName";
-			this.textName.Size = new System.Drawing.Size(100, 21);
+			this.textName.Size = new System.Drawing.Size(121, 21);
 			this.textName.TabIndex = 2;
 			// 
 			// textYear
 			// 
-			this.textYear.Location = new System.Drawing.Point(51, 273);
+			this.textYear.Location = new System.Drawing.Point(76, 273);
 			this.textYear.Name = "textYear";
-			this.textYear.Size = new System.Drawing.Size(100, 21);
+			this.textYear.Size = new System.Drawing.Size(121, 21);
 			this.textYear.TabIndex = 2;
 			// 
 			// textPrice
 			// 
-			this.textPrice.Location = new System.Drawing.Point(51, 300);
+			this.textPrice.Location = new System.Drawing.Point(76, 300);
 			this.textPrice.Name = "textPrice";
-			this.textPrice.Size = new System.Drawing.Size(100, 21);
+			this.textPrice.Size = new System.Drawing.Size(121, 21);
 			this.textPrice.TabIndex = 2;
 			// 
 			// textDoor
 			// 
-			this.textDoor.Location = new System.Drawing.Point(51, 327);
+			this.textDoor.Location = new System.Drawing.Point(76, 327);
 			this.textDoor.Name = "textDoor";
-			this.textDoor.Size = new System.Drawing.Size(100, 21);
+			this.textDoor.Size = new System.Drawing.Size(121, 21);
 			this.textDoor.TabIndex = 2;
 			// 
 			// btnSave
 			// 
-			this.btnSave.Location = new System.Drawing.Point(247, 244);
+			this.btnSave.Location = new System.Drawing.Point(262, 244);
 			this.btnSave.Name = "btnSave";
 			this.btnSave.Size = new System.Drawing.Size(75, 23);
 			this.btnSave.TabIndex = 3;
@@ -125,7 +125,7 @@ namespace Car_Management_System
 			// 
 			// btnChange
 			// 
-			this.btnChange.Location = new System.Drawing.Point(247, 271);
+			this.btnChange.Location = new System.Drawing.Point(262, 271);
 			this.btnChange.Name = "btnChange";
 			this.btnChange.Size = new System.Drawing.Size(75, 23);
 			this.btnChange.TabIndex = 3;
@@ -135,7 +135,7 @@ namespace Car_Management_System
 			// 
 			// btnSerchSome
 			// 
-			this.btnSerchSome.Location = new System.Drawing.Point(247, 298);
+			this.btnSerchSome.Location = new System.Drawing.Point(262, 298);
 			this.btnSerchSome.Name = "btnSerchSome";
 			this.btnSerchSome.Size = new System.Drawing.Size(75, 23);
 			this.btnSerchSome.TabIndex = 3;
@@ -145,7 +145,7 @@ namespace Car_Management_System
 			// 
 			// btnSerchAll
 			// 
-			this.btnSerchAll.Location = new System.Drawing.Point(247, 325);
+			this.btnSerchAll.Location = new System.Drawing.Point(262, 325);
 			this.btnSerchAll.Name = "btnSerchAll";
 			this.btnSerchAll.Size = new System.Drawing.Size(75, 23);
 			this.btnSerchAll.TabIndex = 3;
@@ -164,7 +164,7 @@ namespace Car_Management_System
 			this.listView1.FullRowSelect = true;
 			this.listView1.GridLines = true;
 			this.listView1.HideSelection = false;
-			this.listView1.Location = new System.Drawing.Point(14, 12);
+			this.listView1.Location = new System.Drawing.Point(29, 12);
 			this.listView1.Name = "listView1";
 			this.listView1.Size = new System.Drawing.Size(308, 215);
 			this.listView1.TabIndex = 4;
@@ -174,7 +174,7 @@ namespace Car_Management_System
 			// 
 			// lvID
 			// 
-			this.lvID.Text = "번호";
+			this.lvID.Text = "번 호";
 			// 
 			// lvName
 			// 
@@ -182,21 +182,24 @@ namespace Car_Management_System
 			// 
 			// lvYear
 			// 
-			this.lvYear.Text = "년식";
+			this.lvYear.Text = "년 식";
+			this.lvYear.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			// 
 			// lvPrice
 			// 
 			this.lvPrice.Text = "가 격";
+			this.lvPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			// 
 			// lvDoor
 			// 
 			this.lvDoor.Text = "도 어";
+			this.lvDoor.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(349, 365);
+			this.ClientSize = new System.Drawing.Size(365, 365);
 			this.Controls.Add(this.listView1);
 			this.Controls.Add(this.btnSerchAll);
 			this.Controls.Add(this.btnSerchSome);

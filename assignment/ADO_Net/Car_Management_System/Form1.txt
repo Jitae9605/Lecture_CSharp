@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -113,7 +113,7 @@ namespace Car_Management_System
 			Con.Close();
 		}
 
-		private void btnSave_Click(object sender, EventArgs e) // 저장버튼 클릭시 실행
+		private void btnSave_Click(object sender, EventArgs e)
 		{
 			Con = new SqlConnection();
 			Con.ConnectionString = "Server=(local);database=ADOTest;" + "Integrated Security = true;";
