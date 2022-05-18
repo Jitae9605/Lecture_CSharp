@@ -159,12 +159,14 @@
     <Compile Remove="_CSharp_Q200\A_003_Input.cs" />
     <Compile Remove="_CSharp_Q200\A_005_string.cs" />
     <Compile Remove="_CSharp_Q200\A_008_Console_WriteLine_Format.cs" />
+    <Compile Remove="_CSharp_Q200\A_010_Format_Specifier.cs" />
     <Compile Remove="_CSharp_Q200\A_3_Input.cs" />
     <Compile Remove="_CSharp_Q200\A_5_string.cs" />
     <Compile Remove="코딩테스트연습\신고결과받기.cs" />
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="assignment\ADO_Net\" />
     <Folder Include="chapter 09_Property\" />
     <Folder Include="chapter 07_Class\" />
     <Folder Include="chapter 08_Interface\" />
@@ -177,6 +179,8 @@
     <Folder Include="chapter 16_Reflection_And_Atribute\" />
     <Folder Include="chapter 18_File_And_Directory\" />
     <Folder Include="chapter 19_Thread_And_Task\" />
+    <Folder Include="DB연결툴_ADO.Net\" />
+    <Folder Include="_CSharp_Q200\" />
     <Folder Include="코딩테스트연습\" />
   </ItemGroup>
 
