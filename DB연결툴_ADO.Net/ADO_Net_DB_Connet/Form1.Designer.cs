@@ -44,6 +44,11 @@ namespace ADO_Net_DB_Connet
 			this.btnInsert1 = new System.Windows.Forms.Button();
 			this.checkMale = new System.Windows.Forms.CheckBox();
 			this.btnInsert2 = new System.Windows.Forms.Button();
+			this.btnIncAllAge = new System.Windows.Forms.Button();
+			this.btnIncSomeAge = new System.Windows.Forms.Button();
+			this.btnCommit = new System.Windows.Forms.Button();
+			this.btnRollback = new System.Windows.Forms.Button();
+			this.btnFindOverAgeSum = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// listBox1
@@ -186,11 +191,66 @@ namespace ADO_Net_DB_Connet
 			this.btnInsert2.UseVisualStyleBackColor = true;
 			this.btnInsert2.Click += new System.EventHandler(this.btnInsert2_Click);
 			// 
+			// btnIncAllAge
+			// 
+			this.btnIncAllAge.Location = new System.Drawing.Point(606, 12);
+			this.btnIncAllAge.Name = "btnIncAllAge";
+			this.btnIncAllAge.Size = new System.Drawing.Size(88, 38);
+			this.btnIncAllAge.TabIndex = 9;
+			this.btnIncAllAge.Text = "IncAllAge";
+			this.btnIncAllAge.UseVisualStyleBackColor = true;
+			this.btnIncAllAge.Click += new System.EventHandler(this.btnIncAllAge_Click);
+			// 
+			// btnIncSomeAge
+			// 
+			this.btnIncSomeAge.Location = new System.Drawing.Point(606, 56);
+			this.btnIncSomeAge.Name = "btnIncSomeAge";
+			this.btnIncSomeAge.Size = new System.Drawing.Size(88, 38);
+			this.btnIncSomeAge.TabIndex = 10;
+			this.btnIncSomeAge.Text = "IncSomeAge";
+			this.btnIncSomeAge.UseVisualStyleBackColor = true;
+			this.btnIncSomeAge.Click += new System.EventHandler(this.btnIncSomeAge_Click);
+			// 
+			// btnCommit
+			// 
+			this.btnCommit.Location = new System.Drawing.Point(606, 100);
+			this.btnCommit.Name = "btnCommit";
+			this.btnCommit.Size = new System.Drawing.Size(88, 38);
+			this.btnCommit.TabIndex = 11;
+			this.btnCommit.Text = "Commit";
+			this.btnCommit.UseVisualStyleBackColor = true;
+			this.btnCommit.Click += new System.EventHandler(this.btnCommit_Click);
+			// 
+			// btnRollback
+			// 
+			this.btnRollback.Location = new System.Drawing.Point(606, 144);
+			this.btnRollback.Name = "btnRollback";
+			this.btnRollback.Size = new System.Drawing.Size(88, 38);
+			this.btnRollback.TabIndex = 11;
+			this.btnRollback.Text = "Rollback";
+			this.btnRollback.UseVisualStyleBackColor = true;
+			this.btnRollback.Click += new System.EventHandler(this.btnRollback_Click);
+			// 
+			// btnFindOverAgeSum
+			// 
+			this.btnFindOverAgeSum.Location = new System.Drawing.Point(539, 190);
+			this.btnFindOverAgeSum.Name = "btnFindOverAgeSum";
+			this.btnFindOverAgeSum.Size = new System.Drawing.Size(155, 31);
+			this.btnFindOverAgeSum.TabIndex = 12;
+			this.btnFindOverAgeSum.Text = "FindOverAgeSum";
+			this.btnFindOverAgeSum.UseVisualStyleBackColor = true;
+			this.btnFindOverAgeSum.Click += new System.EventHandler(this.btnFindOverAgeSum_Click);
+			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(676, 302);
+			this.ClientSize = new System.Drawing.Size(713, 275);
+			this.Controls.Add(this.btnFindOverAgeSum);
+			this.Controls.Add(this.btnRollback);
+			this.Controls.Add(this.btnCommit);
+			this.Controls.Add(this.btnIncSomeAge);
+			this.Controls.Add(this.btnIncAllAge);
 			this.Controls.Add(this.checkMale);
 			this.Controls.Add(this.btnInsert2);
 			this.Controls.Add(this.btnInsert1);
@@ -231,6 +291,11 @@ namespace ADO_Net_DB_Connet
 		private System.Windows.Forms.Button btnInsert1;
 		private System.Windows.Forms.CheckBox checkMale;
 		private System.Windows.Forms.Button btnInsert2;
+		private System.Windows.Forms.Button btnIncAllAge;
+		private System.Windows.Forms.Button btnIncSomeAge;
+		private System.Windows.Forms.Button btnCommit;
+		private System.Windows.Forms.Button btnRollback;
+		private System.Windows.Forms.Button btnFindOverAgeSum;
 	}
 }
 
