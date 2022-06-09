@@ -99,7 +99,6 @@ namespace mook_CarInfo
                 // 매개변수 2 : MessageBox에 표시할 타이틀
                 // 매개변수 3 : MessageBox에 표시할 버튼
                 // 매개변수 4 : MessageBox에 표시할 아이콘
-
                 MessageBox.Show("프로그램 실행중에 문제가 발생해서, 프로그램을 종료합니다. \r\n\r\n" + ex.Message, "에러",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 Conn.Close();
