@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.32106.194
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarInfoManagement", "mook_CarInfo\CarInfoManagement.csproj", "{C5AEB418-CA25-4DAB-91E3-F4FF43D8DA6A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConfigurationMgr", "ConfigurationMgr\ConfigurationMgr.csproj", "{0C8CD50E-92CF-43A2-8451-918AD6AD77E7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppConfigurationMgr", "ConfigurationMgr\AppConfigurationMgr.csproj", "{0C8CD50E-92CF-43A2-8451-918AD6AD77E7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADO_NetDB", "ADO_NetDB\ADO_NetDB.csproj", "{A8BD0465-3030-4B7D-A36E-099174BFB60C}"
 EndProject

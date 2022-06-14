@@ -53,8 +53,17 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="ApplicationRootForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationRootForm.Designer.cs">
+      <DependentUpon>ApplicationRootForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ApplicationRootForm.resx">
+      <DependentUpon>ApplicationRootForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -80,6 +89,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ADO_NetDB\ADO_NetDB.csproj">
+      <Project>{a8bd0465-3030-4b7d-a36e-099174bfb60c}</Project>
+      <Name>ADO_NetDB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ConfigurationMgr\AppConfigurationMgr.csproj">
+      <Project>{0c8cd50e-92cf-43a2-8451-918ad6ad77e7}</Project>
+      <Name>AppConfigurationMgr</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

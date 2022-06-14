@@ -3,10 +3,15 @@ using System.Data;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 
+using System.Configuration;
+using AppConfigurationMgr;
+
 namespace mook_CarInfo
 {
-    public partial class Form1 : Form
-    {
+    public partial class Form1 : ApplicationRootForm
+	{
+		private SqlConnection Conn;
+
         public Form1()
         {
             InitializeComponent();
@@ -17,6 +22,11 @@ namespace mook_CarInfo
 
         private void Form1_Load(object sender, EventArgs e)
         {
+			configurationMgr = ConfigurationMgr.Instace();
+			Conn = (SqlConnection)configurationMgr.Connection;
+			Conn.Open();
+			MessageBox.Show(configurationMgr.Connection.State.ToString());
+
             listView_initialize();
         }
 

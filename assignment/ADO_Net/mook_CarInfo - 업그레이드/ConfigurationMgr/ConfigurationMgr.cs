@@ -1,8 +1,9 @@
-﻿using System.Configuration;
+﻿using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 
-namespace ConfigurationMgr
+namespace AppConfigurationMgr
 {
 	public class ConfigurationMgr
 	{
@@ -15,6 +16,12 @@ namespace ConfigurationMgr
 
 		public ConfigurationMgr()
 		{
+			if (LicenseManager.UsageMode ==
+				LicenseUsageMode.Runtime)
+			{
+				
+			}
+
 			// App.config 파일을 읽어서 로딩
 			LoadConfiguration();
 
@@ -26,7 +33,7 @@ namespace ConfigurationMgr
 		private void LoadConfiguration()
 		{
 			// App.config의 내용을 전부 가져와서 config에 저장하는 문장
-			Configuration config = 
+			Configuration config =
 				ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
 
 			ConnectionString = 
@@ -42,14 +49,14 @@ namespace ConfigurationMgr
 
 				// SqlConnetion 생성과 동시에 connetion open 처리를 추가해도 됨
 				// connectio.open()
-				return Connection;
+				return connetion;
 			}
 			private set { }
 		}
 
 		private void MakeConnetion()
 		{
-			connetion = new SqlConnection(ConnectionString);
+			Connection = new SqlConnection(ConnectionString);
 		}
 
 		public static ConfigurationMgr Instace()
