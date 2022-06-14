@@ -18,9 +18,10 @@ namespace AdoNetDB
 		// MsSql Class의 생성자
 		public MsSql(string connection_string)
 		{
+			// 데이터베이스 접속 문자열
 			ConnectionString = connection_string;
 
-			//Connection 할 때 ConnectionString을 사용함.
+			// 접속문자열 을 사용하여 테이터베이스 접속 커넥션을 형성 => SqlConnection
 			Connection = new SqlConnection(ConnectionString);
 		}
 

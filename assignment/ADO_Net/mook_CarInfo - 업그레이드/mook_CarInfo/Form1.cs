@@ -5,6 +5,7 @@ using System.Data.SqlClient;
 
 using System.Configuration;
 using AppConfigurationMgr;
+using Model;
 
 namespace mook_CarInfo
 {
@@ -24,8 +25,8 @@ namespace mook_CarInfo
         {
 			configurationMgr = ConfigurationMgr.Instace();
 			Conn = (SqlConnection)configurationMgr.Connection;
-			Conn.Open();
-			MessageBox.Show(configurationMgr.Connection.State.ToString());
+			Conn.Close();
+			//MessageBox.Show(configurationMgr.Connection.State.ToString());
 
             listView_initialize();
         }
@@ -43,16 +44,17 @@ namespace mook_CarInfo
                 var myRead = Comm.ExecuteReader(CommandBehavior.CloseConnection);
                 while (myRead.Read())
                 {
-                    var strArray = new String[] { myRead["id"].ToString(),
-                    myRead["carName"].ToString(), myRead["carYear"].ToString(),
-                    myRead["carPrice"].ToString(), myRead["carDoor"].ToString() };
+                    //var strArray = new String[] { myRead["id"].ToString(),
+                    //myRead["carName"].ToString(), myRead["carYear"].ToString(),
+                    //myRead["carPrice"].ToString(), myRead["carDoor"].ToString() };
 
-                    var lvt = new ListViewItem(strArray);
+                    var lvt = new ListViewItem(GetcarInfoModel(myRead).ToStringList());
                     this.lvList.Items.Add(lvt);
                 }
                 myRead.Close();
                 //Conn.Close();
             }
+
             catch (Exception ex)
             {
                 MessageBox.Show("프로그램 실행중에 문제가 발생해서, 프로그램을 종료합니다. \r\n\r\n" + ex.Message, "에러",
@@ -61,6 +63,19 @@ namespace mook_CarInfo
             }
             
         }
+		
+		private CarInfoModel GetcarInfoModel(SqlDataReader myRead)
+		{
+			CarInfoModel model = new CarInfoModel();
+			model.id = myRead["id"].ToString();
+			model.carName = myRead["carName"].ToString();
+			model.carPrice = myRead["carPrice"].ToString();
+			model.carYear = myRead["carYear"].ToString();
+			model.carDoor = myRead["carDoor"].ToString();
+
+			return model;
+		}
+
 
         private void btnSave_Click(object sender, EventArgs e)
         {
@@ -157,10 +172,13 @@ namespace mook_CarInfo
             try {
                 Conn.Open();
 
-                string Sql = "update TB_CAR_INFO "
-                        + "set carName = @carName, carYear = @carYear, "
-                        + "carPrice = @carPrice, carDoor = @carDoor "
-                        + "where id = @id ";
+                string Sql = @"update TB_CAR_INFO 
+								  set carName = @carName
+									, carYear = @carYear
+								  	, carPrice = @carPrice
+									, carDoor = @carDoor
+								where 
+								  	  id = @id";
 
                 var Comm = new SqlCommand(Sql, Conn);
                 Comm.Parameters.Add("@id", SqlDbType.Int);

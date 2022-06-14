@@ -95,9 +95,13 @@
       <Project>{a8bd0465-3030-4b7d-a36e-099174bfb60c}</Project>
       <Name>ADO_NetDB</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ConfigurationMgr\AppConfigurationMgr.csproj">
+    <ProjectReference Include="..\ConfigurationMgr\AppConfiguration.csproj">
       <Project>{0c8cd50e-92cf-43a2-8451-918ad6ad77e7}</Project>
-      <Name>AppConfigurationMgr</Name>
+      <Name>AppConfiguration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{5ACE9FD2-D1C0-4570-A681-800BC477AE34}</Project>
+      <Name>Model</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
