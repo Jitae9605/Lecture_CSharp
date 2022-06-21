@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AdoNetDB
 {
-	class Oracle
-	{
-	}
+    class Oracle
+    {
+    }
 }
