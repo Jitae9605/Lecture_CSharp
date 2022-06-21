@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="MySql.Data, Version=8.0.11.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -61,9 +62,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="ApplicationRootForm.resx">
-      <DependentUpon>ApplicationRootForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -91,17 +89,25 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ADO_NetDB\ADO_NetDB.csproj">
-      <Project>{a8bd0465-3030-4b7d-a36e-099174bfb60c}</Project>
-      <Name>ADO_NetDB</Name>
+    <ProjectReference Include="..\AdoNetDB\AdoNetDB.csproj">
+      <Project>{6e23ece1-ab33-47c7-bd84-8f12366df85c}</Project>
+      <Name>AdoNetDB</Name>
     </ProjectReference>
     <ProjectReference Include="..\ConfigurationMgr\AppConfiguration.csproj">
-      <Project>{0c8cd50e-92cf-43a2-8451-918ad6ad77e7}</Project>
+      <Project>{bd398843-2789-43f9-bb13-39ea3b636242}</Project>
       <Name>AppConfiguration</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Libs\Libs.csproj">
+      <Project>{93e333c1-07f9-4c81-b47a-010d5236b42b}</Project>
+      <Name>Libs</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Model\Model.csproj">
-      <Project>{5ACE9FD2-D1C0-4570-A681-800BC477AE34}</Project>
+      <Project>{2da7ffd3-02ae-4196-9974-2d10040bc395}</Project>
       <Name>Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Repositories\Repositories.csproj">
+      <Project>{a1813097-3837-41be-a45b-ccbcaa1636a3}</Project>
+      <Name>Repositories</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
